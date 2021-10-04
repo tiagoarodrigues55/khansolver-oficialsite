@@ -8,6 +8,10 @@ class MyDocument extends Document {
     return (
       <Html lang={AppConfig.locale}>
         <Head />
+        <meta
+          name="google-site-verification"
+          content="0gwO4yWB9dtO-_YGcHnxinEgSx8ioauFYCLZGMQtiuA"
+        />
         <body>
           <Main />
           <NextScript />

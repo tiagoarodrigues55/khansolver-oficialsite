@@ -21,6 +21,11 @@ const Hero = ({ home = false }: { home: boolean }) => (
             <a>Home</a>
           </Link>
         </li>
+        <li>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+        </li>
       </NavbarTwoColumns>
     </Section>
     {home ? (
