@@ -2,7 +2,7 @@ import connectToDatabase from '../../config/mongodb';
 
 export default async (req, res) => {
   const { db, client } = await connectToDatabase(process.env.MONGODB_URI);
-  if (client.isConnected()) {
+  if (client && db) {
     const collection = db.collection('subscribers');
 
     await collection.insertOne({ ...req.body, subscriberAt: new Date() });

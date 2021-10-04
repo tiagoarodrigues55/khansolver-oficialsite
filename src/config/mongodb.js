@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb';
 
-const uri = process.env.MONGODB_URI || ''; // trick ts :(
+const uri = process.env.MONGODB_URI;
 const dbName = process.env.MONGODB_DB;
 
 let cachedClient = null;
@@ -22,7 +22,6 @@ export default async function connectToDatabase() {
   if (cachedClient && cachedDb) {
     return { client: cachedClient, db: cachedDb };
   }
-
   const client = await MongoClient.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
