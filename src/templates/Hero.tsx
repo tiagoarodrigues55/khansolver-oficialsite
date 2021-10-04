@@ -23,9 +23,7 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {
-              'Would you like to have your KhanAcademy recommendations delivered\n'
-            }
+            {'Would you like to have your KhanAcademy assigments delivered\n'}
             <span className="text-primary-500">
               with 100% on time every week?
             </span>

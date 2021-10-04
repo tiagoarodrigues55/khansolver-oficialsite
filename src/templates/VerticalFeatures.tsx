@@ -3,7 +3,7 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-    title="Would you like to have your KhanAcademy recommendations delivered with 100% on time every week?"
+    title="Would you like to have your KhanAcademy assigments delivered with 100% on time every week?"
     description="Sign up for one of our plans and stop worrying!"
   >
     <VerticalFeatureRow
