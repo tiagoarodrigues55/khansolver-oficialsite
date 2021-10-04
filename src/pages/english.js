@@ -2,6 +2,7 @@ import {useState, useEffect} from "react"
 import Styles from '../styles/index'
 import logo from '../../public/assets/images/logo.jpg'
 import axios from 'axios'
+import {Hero} from '../templates/Hero'
 import ReactWhatsapp from 'react-whatsapp'
 function Home(){
   const [formData, setFormData] = useState({plan: '', name: '', username: '', password: '', school: '', transactionId: ''})
@@ -42,8 +43,10 @@ function Home(){
     setFormData({plan: formData.plan, name: formData.name, username: formData.username, password: formData.password, school: formData.school, transactionId: value})
   }
   return(
+    <>
+            <Hero/>
+
           <Styles>
-       
           <img src={logo} style={{width:"160px",height:"160px"}}/>
       <p>
       Would you like to have your KhanAcademy recommendations delivered with 100% on time every week? <br/>
@@ -82,7 +85,7 @@ function Home(){
 	<p>If you sign a plan, don't try to do the exercises! <br/> Because it can hinder the resolution process. We are not responsible for exercises not done if the user has tried to carry out the recommendations during the period covered by the plan.<br/></p>
 </form>
   </Styles>
-
+</>
   )
 }
 

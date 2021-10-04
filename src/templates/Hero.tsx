@@ -7,7 +7,7 @@ import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
-const Hero = () => (
+const Hero = ({ home = false }: { home: boolean }) => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
@@ -16,31 +16,35 @@ const Hero = () => (
             <a>Sign in</a>
           </Link>
         </li>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
       </NavbarTwoColumns>
     </Section>
-
-    <Section yPadding="pt-20 pb-32">
-      <HeroOneButton
-        title={
-          <>
-            {'Would you like to have your KhanAcademy assigments delivered\n'}
-            <span className="text-primary-500">
-              with 100% on time every week?
-            </span>
-          </>
-        }
-        description=""
-        button={
-          <Link href="/english">
-            <a>
-              <Button xl>
-                Sign up for one of our plans and stop worrying!
-              </Button>
-            </a>
-          </Link>
-        }
-      />
-    </Section>
+    {home ? (
+      <Section yPadding="pt-20 pb-32">
+        <HeroOneButton
+          title={
+            <>
+              {'Would you like to have your KhanAcademy assigments delivered\n'}
+              <span className="text-primary-500">
+                with 100% on time every week?
+              </span>
+            </>
+          }
+          description=""
+          button={
+            <Link href="/english">
+              <a>
+                <Button xl>Take a free trial!</Button>
+              </a>
+            </Link>
+          }
+        />
+      </Section>
+    ) : null}
   </Background>
 );
 

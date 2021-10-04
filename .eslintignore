@@ -1,3 +1,4 @@
 node_modules
 out
 /src/pages/english.js
+/src/pages/*.js

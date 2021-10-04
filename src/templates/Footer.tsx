@@ -76,13 +76,13 @@ const Footer = () => (
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/about">
             <a>About</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
-            <a>Docs</a>
+          <Link href="/english">
+            <a>Sing in</a>
           </Link>
         </li>
       </CenteredFooter>
