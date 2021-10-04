@@ -4,6 +4,8 @@ import logo from '../../public/assets/images/logo.jpg'
 import axios from 'axios'
 import {Hero} from '../templates/Hero'
 import ReactWhatsapp from 'react-whatsapp'
+import { useRouter } from 'next/router';
+
 function Home(){
   const [formData, setFormData] = useState({plan: '', name: '', username: '', password: '', school: '', transactionId: ''})
   function handleSubmit(event){
@@ -42,12 +44,14 @@ function Home(){
     const {value} = event.target
     setFormData({plan: formData.plan, name: formData.name, username: formData.username, password: formData.password, school: formData.school, transactionId: value})
   }
+  const router = useRouter();
   return(
     <>
             <Hero/>
 
           <Styles>
-          <img src={logo} style={{width:"160px",height:"160px"}}/>
+
+          <img src={`${router.basePath}/assets/images/logo.jpg`} style={{width:"160px",height:"160px"}}/>
       <p>
       Would you like to have your KhanAcademy recommendations delivered with 100% on time every week? <br/>
        Sign up for one of our plans and stop worrying!<br/>
