@@ -55,8 +55,8 @@ function Home(){
         <option value="">Choose a plan</option>
         <option value="Weekly">Weekly - 0.0001 BTC</option>
         <option value="Monthly">Monthly - 0.0002 BTC</option>
-        <option value="Quarterly">Quarterly - 0.0004 BTC</option>
-        <option value="Yearly">Yearly - 0.0008 BTC</option>
+        <option value="Quarterly">Quarterly - 0.0003 BTC</option>
+        <option value="Yearly">Yearly - 0.0006 BTC</option>
       </select><br/>
         <input type="text" onChange={handleName} placeholder="Full name" /> <br/>
         <input type="text" onChange={handleUsername} placeholder="Khan username" /> <br/>
@@ -70,7 +70,7 @@ function Home(){
 
     <p>
     Any problems or questions, contact me by <br/>
-    email: tiago.americano.03@gmail.com <br/>
+    email: support@khansolver.com <br/>
     or by <br/>
     cell phone: +55 11 992481655 <br/>
     </p>
