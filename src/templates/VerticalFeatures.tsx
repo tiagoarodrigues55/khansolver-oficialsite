@@ -7,7 +7,7 @@ const VerticalFeatures = () => (
   // description="Sign up for one of our plans and stop worrying!"
   >
     <VerticalFeatureRow
-      title="Only 2 dolars per assigment"
+      title="tiago viadao 2 dolars per assigment"
       description="And you give one assigment free, for test our system."
       image="/assets/images/feature.svg"
       imageAlt="First feature alt text"
