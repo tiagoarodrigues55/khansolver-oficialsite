@@ -60,6 +60,7 @@ function Home(){
 
       <select className="planos" id="planos" value={formData.plan ? formData.plan:''} onChange={handleSelectPlan} >
         <option value="">Choose a plan</option>
+        <option value="Free">Free assigment</option>
         <option value="Weekly">Weekly - 0.0001 BTC</option>
         <option value="Monthly">Monthly - 0.0002 BTC</option>
         <option value="Quarterly">Quarterly - 0.0003 BTC</option>
